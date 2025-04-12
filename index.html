@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 My Creative Blog</h1>
+            <p>Share your thoughts, ideas, and stories with the world!</p>
+        </header>
+
+        <section class="form-section">
+            <h2>Create a New Post</h2>
+            <input type="text" id="titleInput" placeholder="Enter Blog Title">
+            <select id="categoryInput">
+                <option value="Technology">Technology</option>
+                <option value="Lifestyle">Lifestyle</option>
+                <option value="Travel">Travel</option>
+                <option value="Education">Education</option>
+                <option value="Food">Food</option>
+            </select>
+            <textarea id="contentInput" placeholder="Write your blog..."></textarea>
+            <button onclick="publishPost()">Publish</button>
+
+            <select id="filterCategory" onchange="filterPosts()">
+                <option value="All">All</option>
+                <option value="Technology">Technology</option>
+                <option value="Lifestyle">Lifestyle</option>
+                <option value="Travel">Travel</option>
+                <option value="Education">Education</option>
+                <option value="Food">Food</option>
+            </select>
+        </section>
+
+        <section id="blogPosts" class="blog-section"></section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

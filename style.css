@@ -1,0 +1,102 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(145deg, #cb3237, #fad0c4);
+    padding: 20px;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+header h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px #b32c2c;
+}
+header p {
+    font-size: 1.2rem;
+    color: #f9f9f9;
+}
+
+/* Form Section */
+.form-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.form-section input, 
+.form-section textarea,
+.form-section select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    font-size: 1rem;
+}
+.form-section button {
+    padding: 10px 20px;
+    background-color:cadetblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.form-section button:hover {
+    background-color: #ff3b3b;
+}
+
+/* Blog Section */
+.blog-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Blog Post Card */
+.blog-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    position: relative;
+}
+.blog-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #e22929;
+}
+.blog-card p {
+    font-size: 1rem;
+    margin: bottom 10px;
+}
+.blog-card .category {
+    font-size: 0.9rem;
+    color: #7d7979;
+}
+.blog-card button {
+    padding: 5px 10px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
